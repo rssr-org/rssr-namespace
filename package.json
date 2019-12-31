@@ -1,6 +1,6 @@
 {
   "name": "rssr-namespace",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Namespace for SCSS in ReactJS",
   "main": "index.js",
   "scripts": {

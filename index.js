@@ -3,7 +3,7 @@ import defaultConfig from  "./defaultConfig.json"
 
 let config;
 try {
-    config = require("~/package.json").namespace;
+    config = require("../../package.json").namespace;
 } catch (e) {
     config = false
 }
