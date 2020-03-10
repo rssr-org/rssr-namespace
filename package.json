@@ -1,10 +1,11 @@
 {
   "name": "rssr-namespace",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Namespace for SCSS in ReactJS",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "babel src/index.js --out-file index.js",
+    "dev": "babel src/index.js --watch --out-file index.js"
   },
   "repository": {
     "type": "git",
@@ -24,5 +25,16 @@
   "homepage": "https://github.com/rssr-org/rssr-namespace#readme",
   "dependencies": {
     "prop-types": "^15.7.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.2.2",
+    "@babel/plugin-proposal-class-properties": "^7.3.0",
+    "@babel/plugin-proposal-decorators": "^7.3.0",
+    "@babel/plugin-proposal-object-rest-spread": "^7.3.2",
+    "@babel/plugin-transform-runtime": "^7.8.3",
+    "@babel/preset-env": "^7.3.1",
+    "@babel/preset-react": "^7.8.3",
+    "babel-preset-minify": "^0.5.0"
   }
 }
